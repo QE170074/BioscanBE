@@ -4,7 +4,7 @@ import os
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-gemini_model = genai.GenerativeModel("gemini-1.5-flash")
+gemini_model = genai.GenerativeModel("gemini-2.0-flash")
 
 def generate_description (label, image_path):
     prompt = f"""Đối tượng được nhận diện trong ảnh là: {label}.
